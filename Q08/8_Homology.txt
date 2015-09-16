@@ -1,0 +1,4 @@
+Folder of chromosome-ise genome-genome comparisons. For each genome-pair, there are 3 csv. They display the number of homologeous genes for each chromosome-chromosome pairing, according to different measurement methods.
+"AllDup" counts all homologies, and therefore counts duplicated genes multiple times.
+"NoDup" ignores all genes which appear multiple times in at least one of both genomes in the comparison.
+"Prob" counts duplicated genes proportional to their number, i.e. if there are 4 duplicates, each counts for 0.25 genes.

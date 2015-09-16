@@ -1,0 +1,7 @@
+Contains 1 table, based on calculation with the software ChromEvol 2. Database of >500 chromosome sizes for different genomes was a combination of the genomesize.com database and Ensembl 78. The phylogenetic times came from timetree.com
+
+df.nChrAmn.p:
+Likelihoods for different Amniota chromosome numbers as implied by ChromEvol 2 with fixed chromosome loss/gain-rates at 0.525 per million years. The implied optimal chromosome number can be found at 21.
+variables:
+a) nChr: number of chromosomes
+b) P: likelihood for this particular number of chromosomes.

@@ -1,0 +1,1 @@
+Sizes of chromosomes (rows) of different Amniota species (columns) in nucleobases. Data from Ensembl 78.

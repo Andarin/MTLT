@@ -1,0 +1,8 @@
+1 table with calculated Chi2-square- and G-distances for different genome-genome comparisons. The data for the comparisons comes from Ensembl 78 and shown in the 8_HomologyTables directory, the calculations to summarize this data and calculate these tables were done in R based on it.
+
+variables:
+a) species: genome1-genome2 combintation
+b) variable: the name of the two different distances per species: either chi-square or g-statistic
+c) phylo_distance: distance between two genomes in million years
+d) normal: the actual distance as a log-p-value
+e) pseudocount: same as d), but before calculating the p-value, a pseudocount of 1 was added in each cell of the contigency table

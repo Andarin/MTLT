@@ -1,0 +1,5 @@
+Contains 1 table with the following variables:
+a) inv: Estimated number of inversions 
+b) transl: Estimated number of reciprocal translocations
+c) species: branch for which the estimation was done (either Euarchontoglires - Homo sapiens or Euarchontoglires - Mus musculus)
+d) paper: source for the data. Either a paper as indicated, or own methods called "Stat. Est." and "Num. Est." as indicated in Master thesis.

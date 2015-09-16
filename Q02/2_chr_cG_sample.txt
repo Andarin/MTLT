@@ -1,0 +1,17 @@
+Containing 1 table with summary information to all chromosomes in all 21 well-assembled genomes of Ensembl 78.
+The information was downloaded with R using the ensembl API via the package biomaRt.
+Variables in the table:
+a) species: species name
+b) chromosome_name: name of the chromosome within the species
+c) gene_length: length of the chromosome in genes
+d) physical_length: length of the chromosome in nucleobases
+e) coding_length: combined length in nucleobases of all coding genes
+f) coding.to.total: e) / d)
+g) noncoding_length: d) - e)
+h) chr_physical_number: rank of chromosome as ordered (descending) by d)
+i) chr_noncoding_number: rank of chromosome as ordered (descending) by g)
+j) chr_gene_number: rank of chromosome as ordered (descending) by c)
+k) physical_density: in the order of h), calculating the cumulative value of d), normalized by the sum of d) per species
+l) noncoding_density: in the order of i), calculating the cumulative value of g), normalized by the sum of g) per species
+m) gene_density: in the order of j), calculating the cumulative value of c), normalized by the sum of c) per species
+n) chr_gene_number.rel: for each species x, y equi-distant numbers between 0 and 1 if y is the number of chromosomes in species x

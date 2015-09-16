@@ -1,0 +1,21 @@
+2 tables included:
+
+df.aic:
+Data calculated with ChromEvol 2 software. Database of >500 chromosome sizes for different genomes was a combination of the genomesize.com database and Ensembl 78. The phylogenetic times came from timetree.com
+variables:
+a) GainRate: Imposed rate of chromosome gains per million years
+b) LossRate: Imposed rate of chromosome losses per million years
+c) LogLikelihood: LogLikelihood of the whole model as calculated by ChromEvol 2
+d) AIC: AIC of the whole model as calculated by ChromEvol 2
+e) AmniotaChr: optimal Amniota chromosome number as implied by the model
+f) AmniotaChrLikeli: optimal Likelihood of the Amniota chromosome number as implied by the model (in comparison to 1, 2, 3, ... chromosomes)
+g) rect.min: inferred minimal gain/loss-rate with equal Amniota chromosome number (linear interpolation based on a) and d) )
+h) rect.max: inferred maximal gain/loss-rate with equal Amniota chromosome number (linear interpolation based on a) and d) )
+
+df.rect:
+Rectangle information extracted from df.aic. This was done due to the fact that plotting several rectangles with the same colors side by side lead to an unaesthetic 1 pixel column between them. Therefore, same coloured rectangles were grouped together.
+variables:
+a) AmniotaChr: optimal Amniota chromosome number as implied by the model
+b) rect.min: inferred minimal gain/loss-rate with equal Amniota chromosome number
+c) rect.max: inferred maximal gain/loss-rate with equal Amniota chromosome number
+

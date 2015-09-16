@@ -1,0 +1,27 @@
+4 tables included:
+
+1) df.amniota.spec:
+Table of real data obtained from Ensembl 78, formatted to create the plot.
+a) species: names of 21 well-assembled Amniota species in Ensembl 78
+b) chrom_cum: for each species, as many equi-distant values between 0 and 1 as species has chromosomes according to Ensembl 78
+c) gene_cum: relative gene amount according to Ensembl 78
+
+2) df.amniota.est:
+Table of inferred data, based on Ensembl 78 data and the inference software ChromEvol 2.
+3 variables:
+a) species: always "amniota"
+b) chrom_cum: 21 equi-distant values between 0 and 1; representing 21 chromosomes of amniota, based on estimation via ChromEvol 2
+c) gene_cum: relative gene amount; average of all 20 well-assembled Amniota species in Ensembl 78
+
+3) df.sim.amniota:
+Equivalent to df.aminota.spec, with the difference that these genomes are not real, but simulated with the simulation software MagSimus.
+a) species: names of 5 Amniota species simulated with MagSimus
+b) chrom_cum: for each species, as many equi-distant values between 0 and 1 as species has chromosomes in the MagSimus simulation
+c) gene_cum: simulated relative gene amount
+
+4) df.dist:
+Simulated data, showing limit distribution of two different chromosome selection mechanisms.
+3 variables:
+a) species: either "Proportional" or "Uniform"
+b) chrom_cum: 100 equi-distant values between 0 and 1 for both mechanisms ("species")
+c) gene_cum: simulated relative gene amount

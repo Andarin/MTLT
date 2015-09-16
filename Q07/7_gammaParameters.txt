@@ -1,0 +1,15 @@
+There are 6 tables containing the results of simulations with MagSimus using different gamma distributions as inversion size distributions. There are 6 tables for 2 different reasons:
+There are three different output parameters observed (mean of Kolmogorov-Smirnov statistics measured in synteny blocks over 10 synteny block size distributions (no suffix), mean of Kolmogorov-Smirnov statistic measured in genes over 10 synteny block size distributions ("_block"), and the mean of G statistics over 10 genome-genome comparisons ("_GMeasure")). 
+For each of the observed outputs, there are 2 different tables available: 
+1) "_allData", which lists all 100 observations for each input configuration:
+a) sim: name of the simulation
+b) gammaShape: shape parameter of the gamma distribution
+c) gammaScale: scale parameter of the gamma distribution
+d) cumAbs: the observation (100 per input configuration)
+
+2) And (no suffix) which has 6 summary statistics:
+d) cumAbsMean: the mean over the 100 observations as listed in "_allData" for each input configuration; each of these observations is the average over 10 genome-genome KS-statistics
+e) cumRelMean: the geometric mean over 100 observations, where each observation is defined as follows: geometric mean of (observed KS-statistic for genome-genome comparison x / minimal observed KS-statistic for genome-genome comparison x) over 10 different genome-genome comparisons; therefore, each observation gives a relative value of quality of fit - 1.0 indicates that this observation has the best fit for all 10 genome-genome comparisons
+f) HS-MM_mean: the mean over all 100 observations for the human - mouse comparison (in contrast to d), which meta-averages the average of 10 comparisons, including human - mouse)
+g) HS-MM_min: the minimum over all 100 observations for the human - mouse comparison
+h) HS-MM_max: the maximum over all 100 observations for the human - mouse comparison

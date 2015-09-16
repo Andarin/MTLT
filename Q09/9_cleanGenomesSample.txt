@@ -1,0 +1,8 @@
+Sample of complete list of Amniota genomes expressed in genes. Data source: Ensembl 78.
+For 69 Amniota, there is a table with the following variables:
+a) Chromosome name
+b) Starting position (nucleobase)
+c) End position (nucleobase)
+d) Gene orientation
+e) Gene name
+f) Alternative gene name
