@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      COAPMODEMultipleLinearRegression
+# Quantlet:      COAPMODEChrSizesInDifferentScalings
 # -----------------------------------------------------------------------------
 # Description:   For 21 (or 5) Amniota species, all chromosomes are plotted
 #                in two different scalings (x and y-axis). The linear
@@ -15,7 +15,8 @@
 # -----------------------------------------------------------------------------
 # Keywords:      plot, linear regression, R-squared, estimation, approximation
 # -----------------------------------------------------------------------------
-# See also:      COAPMODEChromosomeSizes, COAPMODEChrcGSample
+# See also:      COAPMODEChrSizesMinMaxAmniota, 
+#                COAPMODEChrSizesDistributionsInAmniota
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 #                Some function adapted from Fernando G Taboada
