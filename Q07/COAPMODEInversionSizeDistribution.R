@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      InversionSizeDistribution
+# Quantlet:      COAPMODEInversionSizeDistribution
 # -----------------------------------------------------------------------------
 # Description:   For Gamma distributions with different scales (x), 2 different
 #                ways to calculate the KS-statistic are shown (based on
@@ -22,11 +22,11 @@
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      7_gammaParameters_block.csv,
-#                7_gammaParameters_block_allData.csv,
-#                7_gammaParameters.csv,
-#                7_gammaParameters_allData.csv,
-#                7_gammaParameters_GMeasure_allData.csv
+# Datafile:      COAPMODEGammaParameters_block.csv,
+#                COAPMODEGammaParameters_block_allData.csv,
+#                COAPMODEGammaParameters.csv,
+#                COAPMODEGammaParameters_allData.csv,
+#                COAPMODEGammaParameters_allData.csv
 # -----------------------------------------------------------------------------
 
 # Load package
@@ -34,11 +34,11 @@ require(ggplot2)
 
 # Load data
 # 1) KS based on blocks
-df.gammaBlock    = read.table('7_gammaParameters_block.csv', 
+df.gammaBlock    = read.table('COAPMODEGammaParameters_block.csv', 
                               sep='\t', 
                               header = T, 
                               stringsAsFactors = F)
-df.gammaBlockAll = read.table('7_gammaParameters_block_allData.csv', 
+df.gammaBlockAll = read.table('COAPMODEGammaParameters_block_allData.csv', 
                               sep='\t', 
                               header = T, 
                               stringsAsFactors = F)
@@ -47,11 +47,11 @@ df.gammaBlock[,c(4,6,7,8)] = exp(df.gammaBlock[,c(4,6,7,8)])
 df.gammaBlockAll[,c(4)]    = exp(df.gammaBlockAll[,c(4)])
 
 # 2) Compare to KS based on genes
-df.gamma    = read.table('7_gammaParameters.csv', 
+df.gamma    = read.table('COAPMODEGammaParameters.csv', 
                          sep='\t', 
                          header = T, 
                          stringsAsFactors = F)
-df.gammaAll = read.table('7_gammaParameters_allData.csv', 
+df.gammaAll = read.table('COAPMODEGammaParameters_allData.csv', 
                          sep='\t', 
                          header = T, 
                          stringsAsFactors = F)
@@ -60,7 +60,7 @@ df.gamma[,c(4,6,7,8)] = exp(df.gamma[,c(4,6,7,8)])
 df.gammaAll[,c(4)]    = exp(df.gammaAll[,c(4)])
 
 # 3) Look at g-Measure
-df.gamma_gmAll = read.table('7_gammaParameters_GMeasure_allData.csv', 
+df.gamma_gmAll = read.table('COAPMODEGammaParameters_GMeasure_allData.csv', 
                             sep='\t', 
                             header = T, 
                             stringsAsFactors = F)

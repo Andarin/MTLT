@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      CreationOfChromosomeStatisticsDataSet
+# Quantlet:      COAPMODECreateStatisticsDatasetForGenomes
 # -----------------------------------------------------------------------------
 # Description:   Creates dataset for 21 Amniota species, which includes
 #                various statistics for their chromosomes, partially downloaded
@@ -17,12 +17,12 @@
 # Keywords:      data mining, preprocessing, descriptive-statistics, tree, 
 #                discrete
 # -----------------------------------------------------------------------------
-# See also:      ChrSizesInDifferentScalings, ChrSizesMinMaxAmniota
+# See also:      COAPMODEMultipleLinearRegression, COAPMODEChrcGSample
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      9_cleanGenomesSample.RData, 9_ChrPhysicalSize.csv, 
-#                8_amniota-good.nwk
+# Datafile:      COAPMODECleanGenomesSample.RData, COAPMODEChrPhysicalSize.csv, 
+#                COAPMODEAmniotaGood.nwk
 # -----------------------------------------------------------------------------
 
 
@@ -32,9 +32,9 @@ require(reshape2)
 require(ape)
 
 # Load data
-load('9_cleanGenomesSample.RData')
-chr.physical_size = read.csv('9_ChrPhysicalSize.csv')
-tree.amniota.good = read.tree('8_amniota-good.nwk')
+load('COAPMODECleanGenomesSample.RData')
+chr.physical_size = read.csv('COAPMODEChrPhysicalSize.csv')
+tree.amniota.good = read.tree('COAPMODEAmniotaGood.nwk')
 magsimus.species.underscore = c('homo_sapiens', 'mus_musculus', 
                                 'canis_familiaris', 'monodelphis_domestica', 
                                 'gallus_gallus')

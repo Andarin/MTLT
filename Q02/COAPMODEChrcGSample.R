@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      ChrSizesMinMaxAmniota
+# Quantlet:      COAPMODEChrcGSample
 # -----------------------------------------------------------------------------
 # Description:   The minimal and maximal chromosome sizes in different
 #                Amniota genomes are shown, in both number of genes as well
@@ -13,11 +13,11 @@
 # Keywords:      plot, extreme-value, descriptive-statistics, 
 #                distribution, bandwidth
 # -----------------------------------------------------------------------------
-# See also:      ChrSizesDistributionsInAmniota, ChrSizesInDifferentScalings
+# See also:      COAPMODEChromosomeSizes, ChrSizesInDifferentScalings
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      2_chr_cG.RData
+# Datafile:      COAPMODEChrcGSample.RData
 # -----------------------------------------------------------------------------
 
 
@@ -27,7 +27,7 @@ require(ggplot2)
 # Load data
 # Data contains summary statistics for every chromosome of 21 selected 
 # Amniota genomes
-load("2_chr_cG.RData")
+load("COAPMODEChrcGSample.RData")
 magsimus.species = c("homo_sapiens", "mus_musculus", "canis_familiaris", 
                      "monodelphis_domestica", "gallus_gallus")
 

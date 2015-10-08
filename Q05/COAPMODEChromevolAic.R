@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      AICChromEvol2ForFusFisRatesAmniota
+# Quantlet:      COAPMODEChromEvolAIC
 # -----------------------------------------------------------------------------
 # Description:   Using ChromEvol 2, a continuous Markov chain estimator,
 #                the optimal transition probability for chromosome numbers
@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      5_df_fusfisAIC.RData
+# Datafile:      COAPMODEChromEvolAIC.RData
 # -----------------------------------------------------------------------------
 
 # Load package
@@ -29,7 +29,7 @@ require(ggplot2)
 #     genes
 # df.rect: contains information for the range of optimal Amniota
 #     starting chromosome numbers
-load('5_df_fusfisAIC.RData')
+load('COAPMODEChromEvolAIC.RData')
 
 plot.aic = ggplot() + 
     geom_rect(data    = df.rect, 

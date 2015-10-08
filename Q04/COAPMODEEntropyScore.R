@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      EntropyScoreComparisonsForGenomeAnalysis
+# Quantlet:      COAPMODEEntropyScore
 # -----------------------------------------------------------------------------
 # Description:   For over 200 genome-genome comparisons with different phylo-
 #                genetic distances, the Chi-square and G-Statistic log-p-
@@ -18,7 +18,7 @@
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      4_df_entropy_score.RData
+# Datafile:      COAPMODEEntropyScore.RData
 # -----------------------------------------------------------------------------
 
 # Load package
@@ -30,7 +30,7 @@ require(ggplot2)
 # for the genome-genome contingency table in genes the log-p-value 
 # of Chi-square test and G-Test (Kullback-Leibler),
 # Furthermore the p-value based on contigency table with pseudo-count
-load('4_df_entropy_score.RData')
+load('COAPMODEEntropyScore.RData')
 
 # Define functions
 fancy_scientific <- function(l) {

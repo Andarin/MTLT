@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      LitAnalysisOfRearrRatesHSMM
+# Quantlet:      COAPMODEEstLiterature
 # -----------------------------------------------------------------------------
 # Description:   Creates 2 plots which compare estimates of chromosomal re-
 #                arrangements between estimates in the thesis (Stat. and 
@@ -16,14 +16,14 @@
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      10_est_literature.RData 
+# Datafile:      COAPMODEEstLiterature.RData 
 # -----------------------------------------------------------------------------
 
 # Load package
 require(ggplot2)
 
 # Load data
-load('10_est_literature.RData')
+load('COAPMODEEstLiterature.RData')
 
 ggplot(estimates.literature, aes(species, inv)) + 
   geom_bar(aes(fill=paper), position="dodge", stat="identity") +

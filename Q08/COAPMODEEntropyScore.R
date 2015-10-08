@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      CreationOfEntropyScoreDataSet
+# Quantlet:      COAPMODEEntropyScore
 # -----------------------------------------------------------------------------
 # Description:   Based on the contingency tables for genome-genome comparisons
 #                for different gene counting methodologies, this script
@@ -14,11 +14,11 @@
 # Keywords:      contingency table, discrete, distance, chi-square, 
 #                Kullback-Leibler
 # -----------------------------------------------------------------------------
-# See also:      EntropyScoreComparisonsForGenomeAnalysis
+# See also:      COAPMODEEntropyScore
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      8_amniota-good.nwk, 8_HomologyTables/*.csv
+# Datafile:      COAPMODEAmniotaGood.nwk, COAPMODEHomologyTables/*.csv
 # -----------------------------------------------------------------------------
 
 # Load packages
@@ -27,10 +27,10 @@ require(ape)
 
 # Load data
 # At first, load phylogenetic tree
-tree.amniota.good = read.tree("8_amniota-good.nwk")
+tree.amniota.good = read.tree("COAPMODEAmniotaGood.nwk")
 amniota.good.dist = cophenetic.phylo(tree.amniota.good)
 # Secondly, load contingency tables for genome-genome comparisons
-setwd("8_HomologyTables/")
+setwd("COAPMODEHomologyTables/")
 files = list.files(".")
 
 # Define function

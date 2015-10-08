@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      ProbAmniotaChromosomeNumber
+# Quantlet:      COAPMODEAmniotaChr
 # -----------------------------------------------------------------------------
 # Description:   Probability for different chromosome numbers for
 #                the ancestral Amniota genome, inferred with ChromEvol 2
@@ -12,11 +12,11 @@
 # Keywords:      plot, probability, Markov, transition probability, 
 #                distribution
 # -----------------------------------------------------------------------------
-# See also:      AICChromEvol2ForFusFisRatesAmniota
+# See also:      COAPMODEChromEvolAIC
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      6_df_amniota_n_chr.RData
+# Datafile:      COAPMODEAmniotaChr.RData
 # -----------------------------------------------------------------------------
 
 # Load package
@@ -26,7 +26,7 @@ require(ggplot2)
 # Probability of different Amniota chromosome numbers according to the optimal
 # parametrisation of the continous Markov-chain model with transition pro-
 # bability at 0.525
-load('6_df_amniota_n_chr.RData')
+load('COAPMODEAmniotaChr.RData')
 
 ggplot() + 
     geom_segment(aes(x    =  df.nChrAmn.p$nChr[which.max(df.nChrAmn.p$P)], 

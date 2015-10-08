@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Quantlet:      ChrSizesDistributionsInAmniota
+# Quantlet:      COAPMODEChromosomeSizes
 # -----------------------------------------------------------------------------
 # Description:   Based on the chromosome sizes expressed in relative
 #                gene content, the discrete CDFs of 21 real Amniota species
@@ -20,11 +20,11 @@
 # Keywords:      plot, cdf, sampling, discrete, linear interpolation,
 #                simulation
 # -----------------------------------------------------------------------------
-# See also:      ChrSizesMinMaxAmniota, ChrSizesInDifferentScalings
+# See also:      COAPMODEChrcGSample, COAPMODEMultipleLinearRegression
 # -----------------------------------------------------------------------------
 # Author:        Lucas Tittmann, 2015-08-14
 # -----------------------------------------------------------------------------
-# Datafile:      1_df_chromosome_sizes.RData
+# Datafile:      COAPMODEChromosomeSizes.RData
 # -----------------------------------------------------------------------------
 
 require(ggplot2)
@@ -35,7 +35,7 @@ require(ggplot2)
 # - Limit distributions of uniform and proportional sampling for translocations
 # - estimated Amniota chromosome sizes
 
-load('1_df_chromosome_sizes.RData')
+load('COAPMODEChromosomeSizes.RData')
 
 ggplot() + 
     geom_line(data = df.dist, 
